@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="arquivo.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <meta charset="utf-8">
+  <title>Cardápio</title>
+</head>
+
+<body class="bg-black">
+
+  <nav class="navbar navbar-expand-lg vh-10 vw-100 d-flex justify-content" style="background-color: #00a491">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="Gerente.html"><h2>Meu Cardápio</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-white">
+            <a class="nav-link active text-light" aria-current="page" href="Gerente.html">Menu Principal</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="funcionários.html">Funcionários</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="cardapios.html">Cardápios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Produtos.html">Produtos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="pedidos.html">Pedidos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="dadosempresa.html">Dados da Empresa</a>
+          </li>
+
+        </ul>
+        <span class="navbar-text text-light">
+          Suporte
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="nav nav-pills flex-column flex-sm-row bg-dark">
+    <a class="flex-sm-fill text-sm-center nav-link " href="cardapios.html">Cardápios</a>
+    <a class="flex-sm-fill text-sm-center nav-link " href="Produtos.html">Produtos</a>
+    <a class="flex-sm-fill text-sm-center nav-link " href="pedidos.html">Ver Pedidos</a>
+    <a class="flex-sm-fill text-sm-center nav-link " href="funcionários.html">Funcionários</a>
+    <a class="flex-sm-fill text-sm-center nav-link " href="dadosempresa.html">Dados da Empresa</a>
+  </nav>
+
+  ..........
+  <!--  -->
+
+
+
+  <h1 style="color:white">Cardápios</h1> <br>
+  <button type="button" class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionar Cardápio
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Criar novo Cardádio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+Nome do Cardádio
+          <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Nome</label>
+</div>
+
+Adicionar Produtos
+<div class="col-md">
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelectGrid">
+        <option selected>none</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <label for="floatingSelectGrid">Adicionar</label>
+    </div>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Título</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Disponibilidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td colspan=""></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar alterações</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  ......
+  <table class="table bg-white m-2">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Data de criação</th>
+        <th scope="col">Ativo</th>
+        <th scope="col">Ações</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="principalcardapio.html">Cardápio Principal </a>
+        </td>
+        <td>12/05/22 </td>
+        <td>
+          <div class="form-check form-switch  text-white ">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck">
+            <label class="form-check-label" for="flexSwitchCheck"></label>
+          </div>
+        </td>
+        <td>
+
+            <a href="editcardapio.html">
+            <button type="button" name="button" >
+            <ion-icon name="brush-outline"></ion-icon>
+          </button> </a>
+        </td>
+        <td> <button type="button" name="button" href="Delete">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+        </td>
+
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="diadosnamoradoscardapio.html">Cardápio Dia dos Namorados</a>
+        </td>
+        <td>14/05/22 </td>
+        <td>
+          <div class="form-check form-switch  text-white ">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck">
+            <label class="form-check-label" for="flexSwitchCheck"></label>
+          </div>
+        </td>
+        <td>
+          <button type="button" name="button" href="Editcardapio">
+            <ion-icon name="brush-outline"></ion-icon>
+          </button>
+        </td>
+        <td>
+          <button type="button" name="button" href="Delete">
+          <ion-icon name="trash"></ion-icon> </button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
